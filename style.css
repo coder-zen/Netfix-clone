@@ -1,0 +1,499 @@
+@import url('https://fonts.googleapis.com/css2?family=Martel+Sans:wght@600&family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+}
+
+
+.main {
+    background-image: url("assets/images/background_1.jpg");
+    background-size: max(1200px, 100vw);
+    background-position: center center;
+    background-repeat: no-repeat;
+    width: 100vw;
+    height: 555px;
+    position: relative;
+
+}
+
+.box {
+    height: 555px;
+    width: 100%;
+    opacity: 0.55;
+    background-color: black;
+    position: absolute;
+    top: 0;
+}
+
+nav {
+    width: 80vw;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+nav img {
+    color: red;
+    width: 190px;
+    position: relative;
+    z-index: 10;
+
+
+}
+
+.btn {
+    position: relative;
+    z-index: 10;
+    border-radius: 3px;
+    margin: 3px;
+    font-size: 13px;
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+.english {
+    padding: 7px 6px;
+    width: 100px;
+    height: 34px;
+    background-color: #0d0c0c;
+    color: white;
+    border: 2px solid black;
+    padding-right: 15px;
+    opacity: 0.9;
+    font-weight: bold;
+    text-align: center;
+
+
+
+}
+
+.signin {
+    width: 75px;
+    height: 32px;
+    background-color: red;
+    border-color: red;
+    color: white;
+    border: 2px;
+
+}
+
+.hero {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    height: calc(100%-100px);
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    color: white;
+    /* padding: 0px 30px; */
+    padding-top: 50px;
+    position: relative;
+
+
+
+}
+
+.hero> :nth-child(1) {
+    color: white;
+    font-weight: 1000;
+    font-size: 48px;
+    /* z-index: 10; */
+
+}
+
+.hero> :nth-child(2) {
+    /* font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; */
+    color: white;
+    z-index: 10;
+    font-size: 25px;
+    font-weight: 400;
+}
+
+.hero>:nth-child(3) {
+    /* z-index: 10; */
+    color: white;
+    font-size: 20px;
+    font-weight: 400;
+
+}
+
+.hero-buttons {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Martel Sans', sans-serif;
+    cursor: pointer;
+
+
+}
+
+.input {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 370px;
+    height: 60px;
+    background-color: #928282;
+
+    color: white;
+    border: 2px solid white;
+    border-radius: 2px;
+    line-height: 25px;
+    z-index: 10;
+    text-align: left;
+    padding-left: 10px;
+    -webkit-text-fill-color: white;
+
+
+
+    /* font-size: 24px; */
+
+    opacity: 0.4;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+
+
+
+
+}
+
+
+.btn-red {
+    background-color: red;
+    height: 65px;
+    border-radius: 2px;
+    border: 6px solid red;
+
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 25px;
+    font-weight: 500;
+    padding: 16px;
+    padding-top: 14px;
+    padding-left: 15px;
+    text-align: center;
+    color: white;
+
+
+}
+
+.seperation {
+    height: 4px;
+    background-color: rgb(46, 44, 44);
+    position: relative;
+    /* why we user here position relative beacuse the when its hight is changed thr the position of this box will changed relatively to its origion positon */
+    z-index: 20;
+}
+
+.first {
+    height: 550px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 115px 115px;
+}
+
+.secimg {
+    position: relative;
+    display: flex;
+    justify-content: end;
+    position: absolute;
+    /* left: -230px; */
+    right: 400px;
+    top: 600px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+
+
+
+}
+
+.secimg img {
+    width: 555px;
+    position: absolute;
+    right: -253px;
+    z-index: 10;
+
+}
+
+.secimg video {
+    position: absolute;
+    top: 63px;
+    right: 0px;
+    width: 406px;
+    height: 274px;
+    left: -191px;
+    /* padding-left:20px ; */
+    /* padding-right:20px ; */
+
+}
+
+.text {
+    display: flex;
+    flex-direction: column;
+    /* gap: 25px; */
+    z-index: 15;
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-left: 50px;
+    padding-right: 600px;
+    justify-content: center;
+    align-content: start;
+    padding-top: 20px;
+    padding-bottom: 100px;
+ 
+
+
+}
+
+.text :nth-child(1) {
+    font-weight: 900;
+    font-size: 48px;
+    /* line-height: 120px; */
+    /* text-align: left; */
+    /* text-align: center; */
+    padding-bottom: 15px;
+}
+
+.text :nth-child(2) {
+    font-size: 26px;
+    font-weight: 400;
+}
+
+    /* .text :nth-child(3){
+        font-size: 26px;
+        font-weight: 400;
+    } */
+
+
+.second {
+    height: 550px;
+    width: 100vw;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 115px 115px;
+
+}
+
+.text2 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* z-index: 15; */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-right: 100px;
+}
+
+.text2 :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.text2 :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.third {
+    width: 100%;
+    /* height: 70vh; */
+}
+
+.text3 {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+    /* z-index: 15; */
+    color: white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.text3 :nth-child(1) {
+    font-size: 48px;
+    font-weight: 900;
+}
+
+.text3 :nth-child(2) {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.thirdimg video {
+    max-width: 361px;
+    height: 420px;
+    z-index: -2;
+
+    position: absolute;
+    right: 258px;
+    top: 1647px;
+    display: inline-block;
+
+}
+
+.thirdimg {
+    z-index: 90;
+    max-width: 100%;
+}
+.photo{
+    z-index: 15px
+    ;
+}
+.problem
+{
+    height: 860px;;
+}
+
+.faq {
+
+    color: white;
+    background: black;
+    padding: 34px;
+    padding-top: 40px;
+    text-align: center;
+    font-size: 35px;
+    font-weight: 900;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+
+}
+.faqbox:hover {
+    background-color: #414141;
+    color: white;
+}
+
+.faqbox {
+    font-size: 24px;
+    font-weight: 400;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.faqbox {
+    transition: all 1s ease-in-out;
+    display: flex;
+    flex-direction: row;
+    color: white;
+    background-color: #2f2d2d;
+    width: 75vw;
+    margin: auto;
+    height: 78px;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 1px;
+    padding-left: 35px;
+    padding-right: 35px;
+    /* padding-top: 25px; */
+    z-index: 10;
+
+}
+
+.faqbox {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.seper {
+    height: 8px;
+    background-color: rgb(0, 0, 0);
+    position: relative;
+    /* why we user here position relative beacuse the when its hight is changed thr the position of this box will changed relatively to its origion positon */
+    z-index: 20;
+}
+
+.hero2 {
+    color: white;
+    font-size: 24px;
+    font-weight: 300;
+    text-align: center;
+    padding-top: 40px;
+    line-height: 25px;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-bottom: 55px;
+
+
+}
+
+.iit {
+    padding-top: 20px;
+}
+
+footer {
+    color: white;
+max-width: 60vw;
+height: 450px;
+margin: auto;
+padding: 60px;
+
+}
+
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    color: white;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 50px;
+
+    /* align-content: center; */
+    /* justify-content: space-evenly; */
+    transform: scale(120%)
+    translateX(-5%)
+
+
+}
+
+.questions {
+    color: white;
+/* padding-left: 100px; */
+margin-left: -130px;
+display: flex;
+flex-direction: row;
+
+
+
+  
+
+}
+.footer-items{
+    display: flex;
+    flex-direction: column; 
+    gap: 23px;
+}
+.footer a {
+    color: white;
+    font-size: 15px;
+    font-weight: 400;
+}
+.dev
+{
+    color: white;
+    font-size: 30px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 75px;
+}
